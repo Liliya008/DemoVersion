@@ -1,2 +1,17 @@
-package com.test.openmrs.runners;public class ReRunner {
+package com.test.openmrs.runners;
+
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+        features = "@target/uiFailedTests.txt",
+        glue = "com/test/openmrs/stepdefinitions",
+        tags = "@regression",
+        plugin = {"pretty","html:target/uiReport.html","rerun:target/uiFailedTests.txt"}
+)
+
+public class ReRunner {
 }

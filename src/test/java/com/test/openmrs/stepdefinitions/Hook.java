@@ -1,8 +1,8 @@
 package com.test.openmrs.stepdefinitions;
 
-import com.test.openmrs.utils.BrowserUtils;
-import com.test.openmrs.utils.ConfigReader;
-import com.test.openmrs.utils.DriverHelper;
+import utils.BrowserUtils;
+import utils.ConfigReader;
+import utils.DriverHelper;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;

@@ -1,4 +1,4 @@
-package com.test.openmrs.utils;
+package utils;
 
 import io.cucumber.java.Scenario;
 import org.apache.commons.io.FileUtils;
