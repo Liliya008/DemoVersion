@@ -14,13 +14,13 @@ public WebDriver driver= DriverHelper.getDriver();
 
 @Before
     public void setup(){
-    driver.get(ConfigReader.readProperty("QA_OpenMRS_URL"));
+    driver.get(ConfigReader.readProperty("QA_URL"));
 }
 
 @After
     public void tearDown(Scenario scenario){
     BrowserUtils.getScreenShotForCucumber(driver,scenario);
-    //driver.quit();
+    driver.quit();
 
 }
 
